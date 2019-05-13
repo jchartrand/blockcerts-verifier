@@ -24,7 +24,7 @@ export default function FinalVerificationStep ({ chain = '', transactionLink = '
   const details = isTestChain
     ? 'Mocknet credentials are used for test purposes only. They are not recorded on a blockchain, ' +
     'and they should not be considered verified Blockcerts.'
-    : html`This is a valid ${chain} certificate.<br/>
+    : html`This is a valid ${chain} certificate issued by McMaster University.<br/>
       <a class='buv-o-link' href='${transactionLink}' hidden?='${!transactionLink}'>
         <span class='buv-o-link__text--underline'>View transaction link</span>
       </a>`;
