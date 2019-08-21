@@ -147,7 +147,7 @@ export function getChain (state) {
 export function isTestChain (state) {
   const chain = getChain(state);
 
-  return chain === 'Mocknet';
+  return chain === 'Mocknet' || chain.indexOf('Testnet') > -1;
 }
 
 export function getVerifiedSteps (state) {
@@ -213,4 +213,8 @@ export function getCertificateSeal (state) {
   }
 
   return '';
+}
+
+export function getFinalStep (state) {
+  return state.finalStep;
 }

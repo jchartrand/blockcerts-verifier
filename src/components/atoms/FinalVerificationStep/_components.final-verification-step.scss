@@ -12,6 +12,10 @@
   opacity: 0;
 }
 
+.buv-c-verification-step__description {
+  margin: 0;
+}
+
 .buv-c-verification-step.is-final.is-visible {
   opacity: 1;
 }
@@ -55,7 +59,7 @@
 
 .buv-c-verification-substep.is-final {
   display: none;
-  white-space: nowrap;
+  line-height: 1.35;
 }
 
 .buv-c-verification-substep.is-final.is-visible {

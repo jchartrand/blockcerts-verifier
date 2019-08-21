@@ -6,5 +6,9 @@ const mapStateToProps = (state) => ({
   metadataList: getMetadataJson(state)
 });
 
-const MetadataContainer = connector(Metadata, { mapStateToProps });
-export { MetadataContainer };
+const ownProps = {
+  display: String
+};
+
+const MetadataContainer = connector(Metadata, { mapStateToProps, ownProps });
+export default MetadataContainer;
